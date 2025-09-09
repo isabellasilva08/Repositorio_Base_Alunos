@@ -1,0 +1,23 @@
+COTACAO_DOLAR = 5
+
+def dolar_real(dolar):
+    real = dolar * COTACAO_DOLAR
+    return real
+def real_dolar(real):
+    dolar = real / COTACAO_DOLAR
+    return dolar
+
+opcao = input("Calculadora Monetária\n" 
+"[1 - Converter de Dólar para Real]\n" \
+"[2 - Converter de Real para Dólar]\n" \
+"Digite sua opção: ")
+
+if opcao == "1":
+    dolares = float(input("Digite quantos dólares: "))
+    reais = dolar_real(dolares)
+    print(f"a sua conversão de dolares pra reais é {reais}")
+
+elif opcao == "2":
+    reais = float(input("Digite quantos reais"))
+    dolares = real_dolar(reais)
+    print(f"Digite quantos reais {dolares}")
